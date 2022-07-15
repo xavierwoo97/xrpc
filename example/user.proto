@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package usermodel;
+
+option cc_generic_services = true;
+
+
+// 公用的消息响应类型
+message ResultCode
+{
+    uint32 errcode = 1;
+    bytes errmsg = 2;
+}
+
+
+// Login请求参数类型
+message LoginRequest
+{
+    bytes name = 1;
+    bytes pwd = 2;
+}
+
+// Login响应参数类型
+message LoginResponse
+{
+    ResultCode result = 1;
+    bool success = 2;
+}
+
+// Register请求参数类型
+message RegisterRequest
+{
+    uint32 id = 1;
+    bytes name = 2;
+    bytes pwd = 3;
+}
+
+// Register响应参数类型
+message RegisterResponse
+{
+    ResultCode result = 1;
+    bool success = 2;
+}
+
+// rpc服务定义
+service UserServiceRpc
+{
+    rpc Login(LoginRequest) returns(LoginResponse);
+    rpc Register(RegisterRequest) returns(RegisterResponse);
+}
+
+
+

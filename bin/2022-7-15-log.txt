@@ -1,0 +1,14 @@
+10:32:19=>[info]service name:UserServiceRpc
+10:32:19=>[info]method_name:Login
+10:32:19=>[info]method_name:Register
+10:32:19=>[info]znode create success... path:/UserServiceRpc/Register
+10:32:19=>[info]znode create success... path:/UserServiceRpc/Login
+10:32:19=>[info]RpcProvider start service at ip:127.0.0.1, port:8001
+10:32:37=>[info]/UserServiceRpc/Login data: 127.0.0.1:8001
+10:32:19=>[info]doing local service: Login
+10:32:37=>[info]name zhang san pwd 123456
+10:32:37=>[info]rpc login response success:0
+10:32:37=>[info]/UserServiceRpc/Register data: 127.0.0.1:8001
+10:32:37=>[info]doing local service: Register
+10:32:38=>[info]id 2000 name mprpc pwd 66666
+10:32:38=>[info]rpc register response success:1
