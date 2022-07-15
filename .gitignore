@@ -33,3 +33,6 @@
 # Build Files
 /build/*
 !/build/compile.md
+
+# Exclude My Static Libararies
+!/lib
