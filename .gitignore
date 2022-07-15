@@ -23,10 +23,16 @@
 # Compiled Static libraries
 *.lai
 *.la
-*.a
 *.lib
 
 # Executables
 *.exe
 *.out
 *.app
+
+# Build Files
+/build/*
+!/build/compile.md
+
+# Exclude My Static Libararies
+!/lib
